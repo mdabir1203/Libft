@@ -1,5 +1,4 @@
-# Libft_Experiments
-
+# Recreating my own Libft (Underdevelopment Process)
 # Creating own Library in the C  
 
 # First Task:

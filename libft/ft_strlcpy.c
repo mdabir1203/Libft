@@ -3,10 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 19:37:50 by mabbas            #+#    #+#             */
-/*   Updated: 2022/04/26 19:37:53 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/04 17:01:06 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"

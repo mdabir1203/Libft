@@ -6,13 +6,11 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 04:35:11 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/03 17:26:54 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/04 17:02:27 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include<stdio.h>
-// #include<string.h>
 
 int ft_strlen(const char *str)
 {

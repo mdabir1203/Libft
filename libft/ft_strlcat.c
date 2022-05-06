@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:02:37 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/06 12:46:07 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/06 17:41:46 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,34 +21,39 @@
  */
 #include "libft.h"
 #include<stdio.h>
-
+#include<unistd.h>
+#include<stdlib.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
-	size_t	len;
-	size_t	rlen;
+	size_t	dlen;
+	size_t	slen;
 
-	len = 0;
-	rlen = ft_strlen(src);
-	if (dsize)
+	dlen = ft_strlen(dst);
+	dsize -= dlen + 1;
+	if (!dsize)
 	{
-		if (rlen >= dsize)
-		{
-			return (ft_strlen(src));
-		}
-		else if (rlen == dsize -1)
-		{
-			ft_memcpy(dst, src, len);
-			dst[len] = '\0';
-		}
+		return (dlen);
 	}
-	return (rlen);
+	slen = ft_strlen(src);
+	if (slen > dsize)
+	{
+		slen = dsize;
+	}
+
+	ft_memcpy ( dst+dlen, src, slen );
+	dst[dlen + slen] = '\0';
+	return (dlen + slen);
 }
 
-int main(int argc, char *argv[])
+/*
+int	main(void)
 {
-	char *result;
-	(cast) result = ft_strlcat (argv[1],argv[2], 5);
-	printf ("My output is:%s", &*result);
-
+ 	char dst[9] = "moon";
+ 	char	src[] = "basic";
+ 	printf("%ld", ft_strlcat(dst, src, 3));
+	printf("%s", dst);
+ 	return (0);
 }
+	//write(1, result,sizeof(result));
+ */

@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 18:30:01 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/04 14:24:39 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/06 13:26:31 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,5 @@ void	*ft_memset(void *b, int c, size_t len)
 		count++;
 	}
 	p = (void *)b ;
-
 	return (b);
 }

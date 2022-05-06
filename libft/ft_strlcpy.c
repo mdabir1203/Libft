@@ -6,36 +6,41 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 19:37:50 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/06 04:42:12 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/06 10:51:04 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* size-bounded string copying and concatenation */
+/**
+ * @file ft_strlcpy.c
+ * size-bounded string copying and concatenation
+ **Condtions:
+ * strlcpy() copies up to dstsize - 1 characters
+ * NUL-terminating the result if dstsize is not 0.
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
+
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dest_len)
 {
-	size_t n;
-	unsigned char *d;
-	const char *s;
+	size_t	srclen;
 
-	d = dst;
-	s = src;
-	if(dstsize == 0)
+	srclen = ft_strlen(src);
+	if (srclen + 1 < dest_len)
 	{
-		return (0);
+		ft_memcpy(dst, src, srclen + 1);
 	}
-
-	n = -1;
+	else if (dest_len != 0)
 	{
-		while (dstsize - n -1)
-		{
-			tc_dest[count] = tc_src[count];
-		}
+		ft_memcpy(dst, src, dest_len -1);
+		dst[dest_len -1] = '\0';
 	}
-	d[n] = '\0';
+	return (srclen);
 }
+
 /* #include<stdio.h>
 #include<unistd.h>
 

@@ -6,8 +6,17 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:02:11 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/04 17:02:19 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/05 14:55:05 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	ft_tolower(int c)
+{
+	if ((c >= 'A') && (c <= 'Z'))
+	{
+		return (c + 32);
+	}
+	return (c);
+}

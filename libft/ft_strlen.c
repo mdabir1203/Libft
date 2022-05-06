@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 04:35:11 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/04 17:02:27 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/05 15:59:18 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 int ft_strlen(const char *str)
 {
-    int length;
-    length = 0;
+    int len;
 
-    while(str[length] != '\0')
+    len = 0;
+
+    while (str[len] != '\0')
     {
-        length++;
+        len++;
     }
-    return(length);
+    return(len);
 }
 
 /* int main(int argc, char *argv[])

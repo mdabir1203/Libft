@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:02:37 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/06 17:41:46 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/10 19:02:45 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,40 +20,30 @@
  *
  */
 #include "libft.h"
-#include<stdio.h>
-#include<unistd.h>
-#include<stdlib.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t len)
 {
-	size_t	dlen;
-	size_t	slen;
+	char		*d;
+	const char	*s;
+	size_t		n;
+	size_t		d_len;
 
-	dlen = ft_strlen(dst);
-	dsize -= dlen + 1;
-	if (!dsize)
+	d = dst;
+	s = src;
+	n = len;
+	d_len = 0;
+	while ((n-- != 0) && (*d != '\0'))
+		d++;
+	d_len = d - dst;
+	n = len - d_len;
+	if (n == 0)
+		return (d_len + ft_strlen(s));
+	while (*s != '\0')
 	{
-		return (dlen);
+		if (n != 1)
+			ft_memcpy (d++, s, n--);
+	s++;
 	}
-	slen = ft_strlen(src);
-	if (slen > dsize)
-	{
-		slen = dsize;
-	}
-
-	ft_memcpy ( dst+dlen, src, slen );
-	dst[dlen + slen] = '\0';
-	return (dlen + slen);
+	*d = '\0';
+	return (d_len + (s - src));
 }
-
-/*
-int	main(void)
-{
- 	char dst[9] = "moon";
- 	char	src[] = "basic";
- 	printf("%ld", ft_strlcat(dst, src, 3));
-	printf("%s", dst);
- 	return (0);
-}
-	//write(1, result,sizeof(result));
- */

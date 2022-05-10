@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 17:04:40 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/05 17:13:31 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/09 20:10:26 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,3 @@ void ft_putstr_fd(char *s, int fd)
 {
 	write(fd,&(*s),ft_strlen(s));
 }
-

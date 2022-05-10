@@ -6,32 +6,22 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 17:40:13 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/05 18:18:39 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/10 09:56:52 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	char char_match;
+	char	c_match;
 
-	char_match = c;
-
-	if (*s == '\0')
+	c_match = c;
+	while (*s != c_match)
 	{
-		return (NULL);
+		if (*s == '\0')
+			return (NULL);
+	++s;
 	}
-	else
-	{
-		while (*s != '\0')
-		{
-			if (*s)
-			{
-				return (0);
-			}
-		s++;
-		}
-	}
-
+	return ((char *)s);
 }

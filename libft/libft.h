@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:31:23 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/10 19:50:10 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/12 04:49:33 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int		ft_strlen(const char *str);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_strncmp(const char *str1, const char *str2, size_t nb);
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -38,9 +39,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-//int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
-//char	ft_strnstr(const char *haystack, const char *needle, size_t len);
+char	*ft_strnstr(const char *str, const char *pattern, size_t slen);
 //int	ft_atoi(const char *str);
 
 void	ft_putstr_fd(char *s, int fd);

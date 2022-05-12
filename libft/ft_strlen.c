@@ -6,23 +6,22 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 04:35:11 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/09 19:42:12 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/12 12:16:53 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(const char *str)
+int ft_strlen (const char *str)
 {
     int len;
 
     len = 0;
-
     while (str[len] != '\0')
     {
         len++;
     }
-    return(len);
+    return (len);
 }
 
 /* int main(int argc, char *argv[])

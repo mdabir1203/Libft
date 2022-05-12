@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum1.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/26 03:30:42 by mabbas            #+#    #+#             */
-/*   Updated: 2022/04/26 19:37:12 by mabbas           ###   ########.fr       */
+/*   Created: 2022/05/12 14:09:41 by mabbas            #+#    #+#             */
+/*   Updated: 2022/05/12 14:13:29 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isalnum (int c)
+int	ft_isalnum(int c)
 {
-    if((c >='A' && c<= 'Z') || (c >= 'a' && c<= 'z'))
-    {
-        return(1);
-    }
-    else if(c >= '0' && c <= '9')
-    {
-        return(1);
-    }
-    else
-        return(0);
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') \
+		|| (c >= '0' && c <= '9'))
+		return (1);
+	return (0);
 }
-
-
 
 /*int main () {
    int var1 = 'Z';

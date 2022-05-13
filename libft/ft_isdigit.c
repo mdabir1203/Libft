@@ -5,25 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/26 03:05:45 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/03 17:26:27 by mabbas           ###   ########.fr       */
+/*   Created: 2022/05/12 23:49:04 by mabbas            #+#    #+#             */
+/*   Updated: 2022/05/12 23:50:17 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isdigit(int digit)
+int	ft_isdigit(int digit)
 {
-    if(digit >='0' && digit<= '9' )
-    {
-        return(1);
-    }
-    else
-        return(0);
+	if (digit >= '0' && digit <= '9' )
+		return (1);
+	else
+		return (0);
 }
-
-
-#include <stdio.h>
 
 /*int main(int argc,char *argv[])
 {

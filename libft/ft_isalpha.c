@@ -5,29 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/26 01:50:32 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/03 17:23:28 by mabbas           ###   ########.fr       */
+/*   Created: 2022/05/12 23:31:29 by mabbas            #+#    #+#             */
+/*   Updated: 2022/05/12 23:32:46 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Function to check if the passed char is Alphabetic */
-
-
-#include "libft.h"
-
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-
-    if(c >= 'A' && c <= 'Z')
-    {
-        return(1);
-    }
-    else if(c >= 'a' && c <= 'z' )
-    {
-        return(1);
-    }
-    else
-        return(0);
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z' ))
+		return (1);
+	else
+		return (0);
 }
 
 /*

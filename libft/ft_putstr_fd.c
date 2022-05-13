@@ -6,14 +6,14 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 17:04:40 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/09 20:10:26 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/12 23:55:03 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd,&(*s),ft_strlen(s));
+	write (fd, &s, ft_strlen(s));
 }

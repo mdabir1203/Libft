@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isascii1.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.42wolfsburg.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/26 03:50:11 by mabbas            #+#    #+#             */
-/*   Updated: 2022/04/26 19:37:19 by mabbas           ###   ########.fr       */
+/*   Created: 2022/05/12 23:39:08 by mabbas            #+#    #+#             */
+/*   Updated: 2022/05/12 23:40:43 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if(c>= 0 && c <=127)
-    {
-        return(1);
-    }
-    else
-        return(0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	else
+		return (0);
 }
 
 /*

@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:31:23 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/12 04:49:33 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/12 23:57:36 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 char	*ft_strchr(const char *s, int c);

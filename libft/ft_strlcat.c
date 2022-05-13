@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:02:37 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/10 19:02:45 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/13 01:29:37 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
  *
  */
 #include "libft.h"
+#include<string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t len)
 {
@@ -38,12 +39,20 @@ size_t	ft_strlcat(char *dst, const char *src, size_t len)
 	n = len - d_len;
 	if (n == 0)
 		return (d_len + ft_strlen(s));
-	while (*s != '\0')
+	while (*s != '\0' )
 	{
 		if (n != 1)
-			ft_memcpy (d++, s, n--);
+			ft_memcpy (d++, s, n);
 	s++;
 	}
 	*d = '\0';
 	return (d_len + (s - src));
 }
+
+/* int main()
+{
+	char *dest =  "CCCCCCAHODHUODHEUHEUFHUEHFU";
+	char *src  =  "AAAAAAAAA";
+	printf("My final output: %zu",ft_strlcat(dest, src, -1));
+	//printf("My final output: %zu",strlcat(dest, src, -1));
+} */

@@ -1,5 +1,5 @@
-# Recreating my own Libft (Underdevelopment Process)
+# First Project from the Core Curriculum of 42 Wolfsburg !!
 
-# Creating own Library in the C  
-
-# Under Process --- Will upload when finished  !! 
+## Description: 
+            Recreating and reproducing the behaviours of function from Standard C library 
+## Any kind of update / helping me optimize my code is welcomed !!             

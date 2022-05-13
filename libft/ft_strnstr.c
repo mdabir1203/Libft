@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:01:36 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/12 14:46:03 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/13 12:07:31 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  	5. (typecasted to int for supporting data range) 2 */
 
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strnstr(const char *str, const char *pattern, size_t slen)
 {

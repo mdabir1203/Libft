@@ -6,10 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 01:09:57 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/12 12:16:08 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/13 13:09:53 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	atoi(const char *str);

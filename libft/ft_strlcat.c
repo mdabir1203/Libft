@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:02:37 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/13 01:29:37 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/13 16:56:14 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,39 +20,30 @@
  *
  */
 #include "libft.h"
-#include<string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t len)
 {
 	char		*d;
 	const char	*s;
-	size_t		n;
+	size_t		d_len_empty;
 	size_t		d_len;
 
 	d = dst;
-	s = src;
-	n = len;
+	s = (char *) src;
+	d_len_empty = len;
 	d_len = 0;
-	while ((n-- != 0) && (*d != '\0'))
+	while ((d_len_empty-- != 0) && (*d != '\0'))
 		d++;
 	d_len = d - dst;
-	n = len - d_len;
-	if (n == 0)
+	d_len_empty = len - d_len;
+	if (d_len_empty == 0)
 		return (d_len + ft_strlen(s));
 	while (*s != '\0' )
 	{
-		if (n != 1)
-			ft_memcpy (d++, s, n);
+		if (d_len_empty != 1)
+			ft_strlcpy (d++, s, d_len_empty--);
 	s++;
 	}
 	*d = '\0';
 	return (d_len + (s - src));
 }
-
-/* int main()
-{
-	char *dest =  "CCCCCCAHODHUODHEUHEUFHUEHFU";
-	char *src  =  "AAAAAAAAA";
-	printf("My final output: %zu",ft_strlcat(dest, src, -1));
-	//printf("My final output: %zu",strlcat(dest, src, -1));
-} */

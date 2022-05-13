@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:31:23 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/12 23:57:36 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/13 17:00:11 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define LIBFT_H
 
 # include<stdio.h>
-# include<unistd.h>
-# include<string.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int digit);

@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 18:29:55 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/13 01:35:10 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/13 16:47:36 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned int		count;
-	char				*csrc;
-	char				*cdest;
+	size_t		count;
+	char		*csrc;
+	char		*cdest;
 
 	csrc = (char *)src;
 	cdest = (char *)dst;

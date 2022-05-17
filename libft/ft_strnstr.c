@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:01:36 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/14 04:30:21 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/17 04:55:45 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@
  *	4. *(str) -->>> having some contents inside it check condition
  	5.  */
 #include "libft.h"
-
+#include<stdio.h>
 char	*ft_strnstr(const char *str, const char *pattern, size_t slen)
 {
 	size_t	n;
 
-	n = ft_strlen(pattern);
 	if (!pattern)
 		return ((char *)str);
+	n = ft_strlen(pattern);
 	while (slen-- >= n)
 	{
 		if (!(ft_strncmp(str, pattern, n)))
@@ -39,12 +39,13 @@ char	*ft_strnstr(const char *str, const char *pattern, size_t slen)
 
 /* #include <string.h>
 
+
 int main()
 {
 	//char haystack[30] = "aaabcabcd";
 	//char needle[10] = "aabc";
-	char *empty = (char*)"";
+	char * empty = (char*)"";
 
-	printf("%s\n",ft_strnstr(empty,"Hello",-1));
-	//printf("%s\n",strnstr(empty,"coucou",-1));
+	printf("%s\n",ft_strnstr(empty, "coucou", -1));
+	printf("%s\n",strnstr(empty, "coucou", -1));
 } */

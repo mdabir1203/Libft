@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:01:36 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/17 04:55:45 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/17 17:20:20 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,31 +21,41 @@
  	5.  */
 #include "libft.h"
 #include<stdio.h>
+
 char	*ft_strnstr(const char *str, const char *pattern, size_t slen)
 {
-	size_t	n;
+	char	*sstr;
+	char	*pstr;
+	size_t	pat_len;
 
-	if (!pattern)
-		return ((char *)str);
-	n = ft_strlen(pattern);
-	while (slen-- >= n)
+	sstr = (char *)str;
+	pstr = (char *)pattern;
+	pat_len = (size_t) ft_strlen(pstr);
+	if (pstr[0] == '\0')
+		return (sstr);
+	if (slen == 0)
+		return (0);
+	if (pat_len > slen)
+		return ((char *)"");
+	while (*sstr && (slen-- >= pat_len))
 	{
-		if (!(ft_strncmp(str, pattern, n)))
-			return ((char *)str);
-		str++;
+		if ((ft_strncmp(pstr, sstr, pat_len)) == 0)
+			return (sstr);
+		sstr++;
 	}
 	return (NULL);
 }
 
 /* #include <string.h>
-
-
 int main()
 {
-	//char haystack[30] = "aaabcabcd";
-	//char needle[10] = "aabc";
+	char haystack[100] = "Hello";
+	char needle[100] = "";
 	char * empty = (char*)"";
 
-	printf("%s\n",ft_strnstr(empty, "coucou", -1));
-	printf("%s\n",strnstr(empty, "coucou", -1));
+	printf("%s\n",ft_strnstr(empty, "asd", -2));
+	printf("%s\n",strnstr(empty, "asd", -2));
+	printf (" Original: |%s| \n Duplicate:|%s| \n", \
+	ft_strnstr(haystack,needle, 0), strnstr(haystack,needle,0));
+
 } */

@@ -6,7 +6,7 @@
 #    By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/25 17:54:37 by mabbas            #+#    #+#              #
-#    Updated: 2022/05/17 17:22:15 by mabbas           ###   ########.fr        #
+#    Updated: 2022/05/18 12:35:39 by mabbas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,14 +27,18 @@ objects = $(source:%.c=%.o)
 $(NAME): all
 
 all :
+	@echo "Beware!! We are now Compiling <<<<<-->>>> !__!"
 	$(CC) $(CFLAGS) -c $(source)
 	ar rcs $(NAME) $(objects)
 
 clean :
+	@echo "Time to clean up the dishes !! --- !!"
 	rm -f $(objects)
 
 fclean: clean
-	rm -f $(NAME)
+	@echo "The Genie is now going to remove all the garbages and index"
+	rm -rf $(NAME)
+
 
 re: fclean all
 

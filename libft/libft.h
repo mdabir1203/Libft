@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:31:23 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/19 09:46:51 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/19 21:05:48 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,6 @@ char	*ft_strnstr(const char *str, const char *pattern, size_t slen);
 char	*ft_strdup(const char *string);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *string1, char const *string2);
-char	*ft_strtrim(char const *g_s1, char const *g_set);
+char	*ft_strtrim(char const *s1, char const *set);
 int		ft_strncmp(const char *str1, const char *str2, size_t nb);
 #endif

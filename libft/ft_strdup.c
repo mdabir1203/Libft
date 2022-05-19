@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 21:56:51 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/18 12:57:15 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/19 14:01:44 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
  *	The size is also checked with the NULL byte
  *	Used memcpy rather than strcpy as its better to work with memory and
 	prevent memory leaks.
+ *  strdup() is used to duplicate a string. It returns a pointer
+ 	to null-terminated byte string.
  */
 #include "libft.h"
 #include <string.h>

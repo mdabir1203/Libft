@@ -6,10 +6,16 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 04:43:06 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/19 09:44:55 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/19 11:20:36 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * Concatenation of two given string and return a new string
+ * Used memcpy and strlcat . memcpy is used first to avoid overlapping behavior
+ * Maybe still have memory leaks due to working strlen and joining them
+ * Checking protection by using Null for arg of the function
+ */
 #include "libft.h"
 
 char	*ft_strjoin(char const *string1, char const *string2)
@@ -18,6 +24,8 @@ char	*ft_strjoin(char const *string1, char const *string2)
 	size_t	total_length;
 
 	total_length = 0;
+	if (!string1 || !string2)
+		return (NULL);
 	total_length = ft_strlen(string1) + ft_strlen(string2);
 	newstring = malloc(sizeof(char) * (total_length + 1));
 	if (newstring == NULL)

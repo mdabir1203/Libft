@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 21:56:57 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/17 01:28:52 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/19 09:47:04 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,3 @@ void	*ft_calloc(size_t nvar, size_t elmsize)
 	}
 	return (inptr);
 }
-

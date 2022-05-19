@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:31:23 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/17 01:59:52 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/19 09:46:51 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,16 @@ int		ft_isprint(int c);
 int		ft_strlen(const char *str);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-int		ft_memcmp(const void *s1, const void *s2, size_t n);
-int		ft_strncmp(const char *str1, const char *str2, size_t nb);
+
+/*
+ * Convert string to int / int to str function
+ */
 int		ft_atoi(const char *str);
 
+/*
+** memory functions
+*/
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
@@ -36,6 +42,10 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	*ft_calloc(size_t nvar, size_t size);
 
+/*
+** String functions
+*/
+
 size_t	ft_strlcat(char *dst, const char *src, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
@@ -44,4 +54,7 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *str, const char *pattern, size_t slen);
 char	*ft_strdup(const char *string);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *string1, char const *string2);
+char	*ft_strtrim(char const *g_s1, char const *g_set);
+int		ft_strncmp(const char *str1, const char *str2, size_t nb);
 #endif

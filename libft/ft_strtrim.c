@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 09:43:01 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/19 21:05:34 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/20 01:15:43 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
  * At first - Return a New copy(duplicate maybe)
  * the copied string must not contain the characters in "set"
  *  The character removed from the begin and the end
+ *  +1 is used to include a NULL byte
+ *  This could also done using substr at the end
+ *  Any  optimization idea will be valued
  */
 #include "libft.h"
 
@@ -24,9 +27,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	ldiff;
 	char	*outstring;
 
-	if (s1 == NULL)
-		return (NULL);
-	if (set == NULL)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
 	begin = 0;
 	while (s1[begin] && (ft_strchr(set, s1[begin])))
@@ -42,15 +43,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (outstring);
 }
 
-/* int	main(int argc, char *argv[])
+/* #include<stdio.h>
+int	main(int argc, char *argv[])
 {
 	char	*str;
 	char	*output;
 	char	*set;
 
-	output = malloc (sizeof (char) * (ft_strlen(str) + 1));
-	str = "Who the fwck awr/www4ww?";
-	set = "Wwww";
+	str = "  Who the fuck am I Who     §123 ";
+	set = " Who";
 	output = ft_strtrim (str, set);
 	printf("THe final output is: %s", *&output);
 } */

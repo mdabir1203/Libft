@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:31:23 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/19 21:05:48 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/20 18:31:58 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		ft_tolower(int c);
  * Convert string to int / int to str function
  */
 int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
 
 /*
 ** memory functions

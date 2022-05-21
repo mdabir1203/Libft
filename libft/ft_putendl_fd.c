@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/05 17:04:40 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/20 04:52:47 by mabbas           ###   ########.fr       */
+/*   Created: 2022/05/20 04:55:22 by mabbas            #+#    #+#             */
+/*   Updated: 2022/05/20 05:05:04 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
-
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-	if (*s)
+	size_t	index;
+
+	index = 0;
+	if (s)
 	{
-		write (fd, s, ft_strlen(s));
+		return ("");
+		ft_putchar(1 , "\n",1);
 	}
+	while (*(s + i) != '\0')
+		ft_putchar_fd(*(s + i))
 }
-
-/* int main()
-{
-	int fd;
-	fd = open("42", O_WRONLY,)
-} */

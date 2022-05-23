@@ -12,20 +12,20 @@
 
 #include "libft.h"
 
-static int  ft_sen_len(char *str,char d)
+static int ft_sen_len(char *str, char d)
 {
     int i;
-    int wrd_c;
+    int sen_c;
 
     i = 0;
-    wrd_c = 0;
-    while(str[i])
+    sen_c = 0;
+    while (str[i])
     {
-        while(str[i] == d)
+        while (str[i] == d)
             i++;
-        if(str[i])
+        if (str[i])
         {
-            while(str[i] && str[i] != d)
+            while (str[i] && str[i] != d)
                 i++;
             sen_c++;
         }
@@ -33,32 +33,46 @@ static int  ft_sen_len(char *str,char d)
     return (sen_c);
 }
 
-static int ft_arr_fill(char *str, int i, char *d)
+static void ft_arr_fill(char **bstr, char *lstr, char d)
 {
-    int c;
-    c = 0;
-    while(str[i] && str[i] != d)
+    int i;
+    int j;
+    int len;
+    int begin;
+
+
+    i = 0;
+    j = 0;
+    while (lstr[i] != '\0')
     {
-        i++;
-        c++;
+        if(lstr[i] != d)
+        {
+            len = 0;
+            begin = i;
+            while (lstr[i] != d)
+            {
+                len++;
+                i++;
+            }
+            bstr[j] = (char *) ft_substr(lstr,begin,len);
+            if(len != 0)
+                j++; // derefence my content and fill it
+        }
+        else
+            i++;
     }
+    bstr[j] = 0;
 }
 
-char    **ft_split(char *str, char d)
+
+char **ft_split(char *str, char d)
 {
     char **result_arr;
 
-    result_arr = (char **)malloc(sizeof(char *) * ft_sen_len(str,d) + 1));
+    result_arr = (char **)malloc ( sizeof(char *) * ft_sen_len(str,d) + 1) ;
     if (!result_arr)
         return (NULL);
-    ft_fill_array(result_arr,str,d)
+    ft_arr_fill(result_arr, str, d);
+    //result_arr[ft_sen_len (str,d)] = 0;
     return (result_arr);
-}
-
-#include<stdio.h>
-
-int main(void)
-{
-    printf("%d", num_words("    abir   is   here, sd,ad dsadas a das ",','));
-    printf("%s", ft_substr("this is a sentence",0,ft_strlen(s)));
 }

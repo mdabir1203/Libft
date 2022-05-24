@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 21:56:51 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/19 14:01:44 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/24 19:02:08 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
  	to null-terminated byte string.
  */
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
 char	*ft_strdup(const char *string)
 {

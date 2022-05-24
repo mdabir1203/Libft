@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:01:36 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/17 17:20:20 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/24 15:29:31 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,13 @@
 	to be searched.
  *	3. Bug fix : when we give -1 to slen it seg faults.dont fix
  *	4. *(str) -->>> having some contents inside it check condition
- 	5.  */
+ 	5. The commented code is the condition for fixing security flaw
+	 	in strnstr !! 
+		if (pat_len > slen)
+		return ((char *)""); 
+*/
+
 #include "libft.h"
-#include<stdio.h>
 
 char	*ft_strnstr(const char *str, const char *pattern, size_t slen)
 {
@@ -35,8 +39,6 @@ char	*ft_strnstr(const char *str, const char *pattern, size_t slen)
 		return (sstr);
 	if (slen == 0)
 		return (0);
-	if (pat_len > slen)
-		return ((char *)"");
 	while (*sstr && (slen-- >= pat_len))
 	{
 		if ((ft_strncmp(pstr, sstr, pat_len)) == 0)

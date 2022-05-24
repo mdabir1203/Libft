@@ -1,14 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum1.c                                      :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 14:09:41 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/12 14:13:29 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/24 19:02:52 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @brief Is alphanumeric .. uses the ascii to find out
+ *          Used flags to return if true o
+ * 
+ * @param c 
+ * @return int 
+ */
 
 int	ft_isalnum(int c)
 {

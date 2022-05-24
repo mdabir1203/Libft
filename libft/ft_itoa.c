@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 10:04:00 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/21 23:13:21 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/24 12:08:49 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  * 			  Take absolute value of them.
  * 			  I used --size which is prefix decrement. the value size is decrem
  * 			  first and then starts decrememting again.
- *
+ * 			Dont forget about null terminator in string. I forgot about that
  */
 #include "libft.h"
 
@@ -53,6 +53,8 @@ char	*ft_itoa(int n)
 
 	size = ft_count_size (n);
 	outstring = malloc(sizeof(char) * (size + 1));
+	if (!outstring)
+		return (NULL);
 	if (n < 0)
 		outstring[0] = '-';
 	outstring[size] = '\0';

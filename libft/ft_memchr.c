@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 20:24:44 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/10 01:42:02 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/24 19:03:24 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,17 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
-	unsigned int	i;
+	unsigned int	index;
 
-	i = 0;
+	index = 0;
 	str = (unsigned char *) s;
-	while (i < n)
+	while (index < n)
 	{
-		if (str[i] == (unsigned char)c)
+		if (str[index] == (unsigned char)c)
 		{
-			return ((void *)(str + i));
+			return ((void *)(str + index));
 		}
-		i++;
+		index++;
 	}
 	return (NULL);
 }

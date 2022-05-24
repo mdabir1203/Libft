@@ -58,4 +58,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *string1, char const *string2);
 char	*ft_strtrim(char const *s1, char const *set);
 int		ft_strncmp(const char *str1, const char *str2, size_t nb);
+char    **ft_split(char *str, char d);
 #endif

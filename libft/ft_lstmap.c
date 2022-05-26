@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/05 17:04:40 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/26 06:58:30 by mabbas           ###   ########.fr       */
+/*   Created: 2022/05/26 04:16:20 by mabbas            #+#    #+#             */
+/*   Updated: 2022/05/26 04:48:56 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @file ft_putstr_fd.c
- * It uses the file descriptor 
- */
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+/* t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (fd < 0 || !s)
-		return ;
-	write (fd, s, ft_strlen(s));
-
-}
+	return (0);
+} */

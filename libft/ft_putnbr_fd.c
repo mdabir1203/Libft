@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 12:18:22 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/24 15:08:30 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/26 06:59:16 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,14 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	if (fd < 0)
+		return ;
 	if (n == -2147483648)
 	{
 		ft_putstr_fd("-2147483648", fd);
 		return ;
 	}
-	if (n >= 0 && n < 10)
+	else if (n >= 0 && n < 10)
 		ft_putchar_fd(n + '0', fd);
 	else if (n < 0)
 	{

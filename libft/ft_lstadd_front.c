@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/05 17:04:40 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/26 06:58:30 by mabbas           ###   ########.fr       */
+/*   Created: 2022/05/26 04:12:12 by mabbas            #+#    #+#             */
+/*   Updated: 2022/05/26 06:30:24 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @file ft_putstr_fd.c
- * It uses the file descriptor 
- */
-#include "libft.h"
-
-void	ft_putstr_fd(char *s, int fd)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (fd < 0 || !s)
-		return ;
-	write (fd, s, ft_strlen(s));
-
+	if (new != NULL)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
 }

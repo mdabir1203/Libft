@@ -6,11 +6,23 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 04:14:39 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/26 04:48:46 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/26 10:55:56 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* void	ft_lstdelone(t_list *lst, void (*del)(void *))
+/**
+ * @brief Take node and free the memory of node's content usng 'del'
+ * 			function. memory of 'next' must not be freed. We are using
+ * 			a fnc pointer which is the content of the element received
+ * @param the node to free, address of fnc to delete content
+ * 
+ */
+#include "libft.h"
+
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	return (0);
-} */
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
+}

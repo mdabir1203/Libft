@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 14:09:41 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/24 19:02:52 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/31 00:51:26 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
  * @param c 
  * @return int 
  */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

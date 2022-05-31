@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 04:14:39 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/26 10:55:56 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/30 15:29:42 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)
 		return ;
-	del(lst->content);
+	(*del)(lst->content);
 	free(lst);
 }

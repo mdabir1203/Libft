@@ -6,7 +6,7 @@
 #    By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/25 17:54:37 by mabbas            #+#    #+#              #
-#    Updated: 2022/05/26 04:50:46 by mabbas           ###   ########.fr        #
+#    Updated: 2022/05/31 04:10:20 by mabbas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,30 +21,26 @@ source = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		 ft_tolower.c ft_strlcpy.c ft_strlcat.c   \
 		 ft_memchr.c ft_strchr.c ft_memcmp.c ft_strrchr.c ft_strncmp.c ft_strnstr.c \
 		 ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_itoa.c \
-     ft_split.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
-     ft_putendl_fd.c ft_putnbr_fd.c
+    	 ft_split.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
+    	 ft_putendl_fd.c ft_putnbr_fd.c
 
 bonus_src = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-        ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+       	    ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 # The object files after compiling
 objects = $(source:%.c=%.o)
 objbonus = $(bonus_src:%.c=%.o)
 
-all : $(NAME)
+all: $(NAME)
 
-$(NAME) :
-	@echo "$$HEADER \n $$BOLDRED $(RED) "
+$(NAME): $(source)
+	@echo "$$HEADER"
 	$(CC) $(CFLAGS) -c $(source)
 	ar rcs $(NAME) $(objects)
 
-bonus : $(objbonus) $(objects)
-	@echo "$$HEADER4 You want some pain. Check me out then !!___!!!"
-	ar rcs $(NAME) $(objects) $(objbonus)
-
-clean :
+clean:
 	@echo "$$HEADER2 $$BOLDBLUE"
-	rm -f $(objects) $(objbonus)
+	rm -rf $(objects) $(objbonus)
 
 fclean: clean
 	@echo "$$HEADER3"
@@ -53,8 +49,17 @@ fclean: clean
 
 re: fclean all	
 
-.PHONY : all clean fclean re
-.SILENT: $(NAME) clean fclean re 
+bonus: 
+	@echo "$$HEADER4"
+	$(CC) $(CFLAGS) -c $(bonus_src)
+	ar rcs $(NAME) $(objbonus)
+
+
+.PHONY: all clean fclean re bonus
+
+
+
+
 
 define HEADER
 
@@ -151,6 +156,9 @@ endef
 export HEADER3
 
 define HEADER4
+
+		█▓▒▒░░░<<-- 🅛 🅘 🅝 🅚 🅔 🅓    🅛 🅘 🅢 🅣   🅜 🅐 🅓 🅝 🅔 🅢 🅢 -->>░░░▒▒▓█
+
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣴⣶⣶⣿⡿⠿⠿⠿⠿⠿⠿⠿⠿⠿⣿⣶⣶⣶⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣿⠿⠟⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠛⠻⢿⣿⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣾⣿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣿⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀

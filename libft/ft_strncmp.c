@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:01:13 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/12 14:18:29 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/05/31 23:50:28 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
  * I have one issue to fix when the nb is higher value
  */
 #include "libft.h"
-#include<stdio.h>
 #include<string.h>
 
 int	ft_strncmp(const char *str1, const char *str2, size_t nb)

@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/22 23:29:07 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/24 15:16:44 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/03 10:45:35 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ static	size_t	ft_sen_len(char const *str, char d)
 		{
 			while (str[i] != '\0' && str[i] != d)
 				i++;
-				sen_c++;
+			sen_c++;
+			
 		}
 	}
 	return (sen_c);

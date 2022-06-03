@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 18:29:58 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/11 19:52:45 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/03 10:03:24 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,11 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			count;
 	unsigned char	*tc_src;
 	unsigned char	*tc_dest;
 
 	tc_src = (unsigned char *) src;
 	tc_dest = (unsigned char *) dst;
-	count = -1;
 	if (dst < src)
 	{
 		return (ft_memcpy(dst, src, len));

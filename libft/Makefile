@@ -6,7 +6,7 @@
 #    By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/25 17:54:37 by mabbas            #+#    #+#              #
-#    Updated: 2022/05/31 04:10:20 by mabbas           ###   ########.fr        #
+#    Updated: 2022/06/01 00:01:46 by mabbas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,13 +33,13 @@ objbonus = $(bonus_src:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME): $(source)
+$(NAME):$(source)
 	@echo "$$HEADER"
 	$(CC) $(CFLAGS) -c $(source)
 	ar rcs $(NAME) $(objects)
 
 clean:
-	@echo "$$HEADER2 $$BOLDBLUE"
+	@echo "$$HEADER2"
 	rm -rf $(objects) $(objbonus)
 
 fclean: clean

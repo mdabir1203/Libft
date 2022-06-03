@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:02:37 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/21 23:20:10 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/01 00:07:27 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t len)
 	d_len_empty = len;
 	d_len = 0;
 	while ((d_len_empty-- != 0) && (*tmpdest != '\0'))
+	{
 		tmpdest++;
+	}	
 	d_len = tmpdest - dst;
 	d_len_empty = len - d_len;
 	if (d_len_empty == 0)

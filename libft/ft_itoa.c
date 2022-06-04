@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 10:04:00 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/24 12:08:49 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:24:34 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*ft_itoa(int n)
 
 /* #include<stdio.h>
 
-int	main(void)
+static int	main(void)
 {
 	printf("%s\n",ft_itoa(1234567890));
 	return(0);

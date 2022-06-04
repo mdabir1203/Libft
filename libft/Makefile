@@ -6,7 +6,7 @@
 #    By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/25 17:54:37 by mabbas            #+#    #+#              #
-#    Updated: 2022/06/01 00:01:46 by mabbas           ###   ########.fr        #
+#    Updated: 2022/06/04 00:16:38 by mabbas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ objbonus = $(bonus_src:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME):$(source)
+$(NAME): $(objects)
 	@echo "$$HEADER"
 	$(CC) $(CFLAGS) -c $(source)
 	ar rcs $(NAME) $(objects)

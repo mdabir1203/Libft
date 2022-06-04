@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 01:09:57 by mabbas            #+#    #+#             */
-/*   Updated: 2022/06/03 10:39:22 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:24:02 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int	ft_atoi(const char *str)
 /* #include<stdio.h>
 #include<stdlib.h>
 
-int	main(int ac, char **av)
+static int	main(int ac, char **av)
 {
 	if(ac == 2)
 	{

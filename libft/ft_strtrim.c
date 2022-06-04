@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 09:43:01 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/20 01:15:43 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:43:35 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 
 /* #include<stdio.h>
-int	main(int argc, char *argv[])
+static int	main(int argc, char *argv[])
 {
 	char	*str;
 	char	*output;

@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:01:13 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/31 23:50:28 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:25:12 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t nb)
 	return (0);
 }
 /*
-int main()
+static int main()
 {
 	char s1[100] = "asjdhas\100";
 	char s2[100] = "asjdhas\0";

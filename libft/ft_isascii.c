@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii1.c                                      :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 23:39:08 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/12 23:40:43 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:24:20 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char the_chars[] = { 'A', 0x80, 'Z', '2' , '\t' };
 
 #define SIZE sizeof( the_chars ) / sizeof( char )
 
-int main( void )
+static int main( void )
 {
     int i = 0;
 

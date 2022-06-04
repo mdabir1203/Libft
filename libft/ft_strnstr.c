@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:01:36 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/24 15:29:31 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:25:22 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char	*ft_strnstr(const char *str, const char *pattern, size_t slen)
 }
 
 /* #include <string.h>
-int main()
+static int main()
 {
 	char haystack[100] = "Hello";
 	char needle[100] = "";

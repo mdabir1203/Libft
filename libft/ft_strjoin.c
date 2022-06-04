@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 04:43:06 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/19 11:20:36 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:24:47 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strjoin(char const *string1, char const *string2)
 
 /* #include <stdio.h>
 
-int main()
+static int main()
 {
 	char s1[100] = "";
 	char string2[20] = " 13asda%%%%    sdasd";

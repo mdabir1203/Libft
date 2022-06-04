@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabbas <mabbas@student.wolfsburg42.de>     +#+  +:+       +#+        */
+/*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 19:37:50 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/13 12:52:39 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/06/04 13:24:57 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dest_len)
 /* #include<stdio.h>
 #include<unistd.h>
 
-int main(int argc,char *argv[])
+static int main(int argc,char *argv[])
 {
     #define const_1 "how are you?"
 	#define const_2	""

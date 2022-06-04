@@ -1,5 +1,5 @@
 ## Status of my Project 
-            [![mabbas's 42 Libft Score](https://badge42.vercel.app/api/v2/cl33nxvl8001109l2p31ppqso/project/2571548)])
+[![mabbas's 42 Libft Score](https://badge42.vercel.app/api/v2/cl33nxvl8001109l2p31ppqso/project/2571548)])
 
 
 

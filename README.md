@@ -1,3 +1,8 @@
+## Status of my Project 
+            [![mabbas's 42 Libft Score](https://badge42.vercel.app/api/v2/cl33nxvl8001109l2p31ppqso/project/2571548)])
+
+
+
 # First Project from the Core Curriculum of 42 Wolfsburg !!
 
 ## Description: 

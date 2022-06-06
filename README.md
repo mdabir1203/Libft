@@ -12,7 +12,7 @@
 ## To run and create the library 
         ``` make all
 
-##Output:
+## Output for my Makefile without using Echo as multiline comment
    
    
 <img src="https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png" width="350" height="350">
@@ -34,5 +34,5 @@
 ## To compile the function with your main run this after doing the previous step
             ```make ft_*.c libft.a
            
-## Output for my Makefile without using Echo as multiline comment
+
 

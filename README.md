@@ -12,7 +12,7 @@
 ## To run and create the library 
         ``` make all
    Output:
-<img src="https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png" width="250" height="250">
+<img src="https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png" width="350" height="350">
 ## To uninstall the Object files
             ``` make clean
             

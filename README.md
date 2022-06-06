@@ -13,7 +13,7 @@
         ``` make all
    Output:
             
-![image](https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png | width=50)
+![image](https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png)
 
 ## To uninstall the Object files
             ``` make clean

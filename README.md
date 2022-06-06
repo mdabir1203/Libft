@@ -17,11 +17,12 @@
 
 ## To uninstall the Object files
             ``` make clean
-            ![image](https://user-images.githubusercontent.com/66947064/172187232-19d993c1-d41f-431a-b285-9ecf41890912.png)
+            
+   ![image](https://user-images.githubusercontent.com/66947064/172187232-19d993c1-d41f-431a-b285-9ecf41890912.png)
             
 ## To completely Uninstall the Library(libft.a) 
              ```c make fclean
-               ![image](https://user-images.githubusercontent.com/66947064/172187267-144e9904-383c-4e2a-a346-ed7da795b5c4.png)
+ ![image](https://user-images.githubusercontent.com/66947064/172187267-144e9904-383c-4e2a-a346-ed7da795b5c4.png)
 ## To compile the function with your main run this after doing the previous step
             ```make ft_*.c libft.a
            

@@ -14,7 +14,7 @@
    Output:
             
 ## ![image](https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png)
-<img src="https://your-image-url.type](https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png" width="100" height="100">
 ## To uninstall the Object files
             ``` make clean
             

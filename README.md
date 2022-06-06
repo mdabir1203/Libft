@@ -34,5 +34,11 @@
 ## To compile the function with your main run this after doing the previous step
             ```make ft_*.c libft.a
            
+## I have duplicated version in my Code with my Own Written Main Function during Evaluation -->> To clean it out add this in makefile(Becareful though):
+            ```Makefile remove: 
+                             rm -rf *copy.c 
+                        .phone: remove
+After adding the rule run make remove. After that run make
 
 
+--------->>>>>>>> If you have suggestions how to optimize them any kind of suggestions are welcome. I tried to do the libft using 4 testers.

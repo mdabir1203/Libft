@@ -38,7 +38,7 @@
             ```Makefile remove: 
                              rm -rf *copy.c 
                         .phone: remove
-After adding the rule run make remove. After that run make
+After adding the rule run ```make remove. ``` After that run make
 
 
 --------->>>>>>>> If you have suggestions how to optimize them any kind of suggestions are welcome. I tried to do the libft using 4 testers.

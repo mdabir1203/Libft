@@ -15,7 +15,7 @@
 ##Output:
    
    
-<img src="https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png" width="500" height="150">
+<img src="https://user-images.githubusercontent.com/66947064/172187096-b93cabea-adb6-4390-adce-16b46ec1208e.png" width="350" height="350">
 
 
 ## To uninstall the Object files
@@ -23,7 +23,7 @@
             
 ##Output:
 
-<img src="https://user-images.githubusercontent.com/66947064/172187232-19d993c1-d41f-431a-b285-9ecf41890912.png" width="350" height="350">
+<img src="https://user-images.githubusercontent.com/66947064/172187232-19d993c1-d41f-431a-b285-9ecf41890912.png" width="500" height="100">
             
 ## To completely Uninstall the Library(libft.a) 
              ```c make fclean

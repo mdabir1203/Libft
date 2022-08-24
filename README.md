@@ -1,4 +1,4 @@
-## Creating C Libraries from Scratch in C following the Norminette([https://github.com/42School/norminette](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf))
+# Creating C Libraries from Scratch in C following the Norminette([https://github.com/42School/norminette](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf))
 
 ## Description: 
             Recreating and reproducing the behaviours of function from Standard C library 

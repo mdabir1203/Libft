@@ -1,8 +1,4 @@
-## Creating C Libraries from Scratch
-
-[![mabbas's 42 Libft Score](https://badge42.vercel.app/api/v2/cl33nxvl8001109l2p31ppqso/project/2571548)])
-
-# First Project from the Core Curriculum of 42 Wolfsburg !!
+## Creating C Libraries from Scratch in C following the Norminette([https://github.com/42School/norminette](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf))
 
 ## Description: 
             Recreating and reproducing the behaviours of function from Standard C library 

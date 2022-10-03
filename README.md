@@ -1,4 +1,4 @@
-# Creating C Libraries from Scratch in C 
+# Creating libc from Scratch following the 42 Coding style
 
 
 All the functions are created following the Norminette([https://github.com/42School/norminette](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf))

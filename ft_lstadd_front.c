@@ -6,7 +6,7 @@
 /*   By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 04:12:12 by mabbas            #+#    #+#             */
-/*   Updated: 2022/05/26 10:27:58 by mabbas           ###   ########.fr       */
+/*   Updated: 2022/10/23 18:01:57 by mabbas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
 		return ;
-		new->next = *lst;
-		*lst = new;
+	new->next = *lst;
+	*lst = new;
 }

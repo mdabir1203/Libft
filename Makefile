@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mabbas <mabbas@student.42.fr>              +#+  +:+       +#+         #
+#    By: mabbas <mabbas@students.42wolfsburg.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/25 17:54:37 by mabbas            #+#    #+#              #
-#    Updated: 2022/10/23 17:55:03 by mabbas           ###   ########.fr        #
+#    Updated: 2022/12/18 03:20:46 by mabbas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,15 +39,15 @@ all: $(NAME)
 $(NAME): $(objects)
 	@echo "$$HEADER"
 	$(CC) $(CFLAGS) -c $(source)
-	ar rcs $(NAME) $(objects)
+	@ar rcs $(NAME) $(objects)
 
 clean:
 	@echo "$$HEADER2"
-	rm -rf $(objects) $(objbonus)
+	@rm -rf $(objects) $(objbonus)
 
 fclean: clean
 	@echo "$$HEADER3"
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 
 re: fclean all	
@@ -55,12 +55,12 @@ re: fclean all
 bonus: 
 	@echo "$$HEADER4"
 	$(CC) $(CFLAGS) -c $(bonus_src)
-	ar rcs $(NAME) $(objbonus)
+	@ar rcs $(NAME) $(objbonus)
 
 
 .PHONY: all clean fclean re bonus
 
-
+.silent: all clean fclean re bonus
 
 
 
@@ -104,9 +104,7 @@ export HEADER
 
 define HEADER2
 
-╔╦╗╦╔╦╗╔═╗  ╔╦╗╔═╗  ╔╦╗╦ ╦╦═╗╔═╗╦ ╦  ╔═╗╦ ╦╔╦╗  ╔╦╗╦ ╦╔═╗  ╔╦╗╦═╗╔═╗╔═╗╦ ╦
- ║ ║║║║║╣    ║ ║ ║   ║ ╠═╣╠╦╝║ ║║║║  ║ ║║ ║ ║    ║ ╠═╣║╣    ║ ╠╦╝╠═╣╚═╗╠═╣
- ╩ ╩╩ ╩╚═╝   ╩ ╚═╝   ╩ ╩ ╩╩╚═╚═╝╚╩╝  ╚═╝╚═╝ ╩    ╩ ╩ ╩╚═╝   ╩ ╩╚═╩ ╩╚═╝╩ ╩
+TRASH LIBFT !!!!_!!!! 
 
 endef
 export HEADER2
